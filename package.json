@@ -1,0 +1,34 @@
+{
+  "name": "@my-dish/template-cli",
+  "author": "abouthiroppy <git@about-hiroppy.com> (http://about-hiroppy.com)",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "CLI template for dish",
+  "files": [
+    "npm",
+    "template"
+  ],
+  "keywords": [
+    "my-dish",
+    "cli",
+    "template"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "test": "nyc ava"
+  },
+  "ava": {
+    "files": [
+      "test/**/*.js"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "tap": true
+  },
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "eslint": "^3.19.0",
+    "eslint-config-sky": "^1.4.4",
+    "nyc": "^10.3.2"
+  }
+}
